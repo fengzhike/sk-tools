@@ -1,6 +1,6 @@
 {
   "name": "sk-tools",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "sk-tools",
   "main": "index.js",
   "scripts": {
