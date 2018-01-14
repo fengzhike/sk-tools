@@ -1,7 +1,7 @@
 {
   "name": "sk-tools",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "sk-tools",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,16 @@
   "bin": {
     "sk": "./bin/sk-tools"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengzhike/sk-tools"
+  },
+  "keywords": ["sk-tools","sk","node"],
+  "bugs": {
+    "url": "https://github.com/fengzhike/sk-tools/issues"
+  },
+  "homepage": "https://github.com/fengzhike/sk-tool#readme",
+  "author": "Shun-Kai",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {

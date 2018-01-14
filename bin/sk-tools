@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 var arg = process.argv[2];
+const package = require('../package.json')
 var shell = require("shelljs");
 if(arg=='init'||arg=='-i'){
 	shell.exec('git clone https://github.com/fengzhike/sk-demo.git');
 }else if(arg =='-v'|| arg =='--version' ){
-	shell.exec("echo hello " + arg);
+	shell.exec("echo sk-tools @" + package.version);
 }
 else{
 	shell.exec("echo hello " + arg);
