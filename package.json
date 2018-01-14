@@ -7,17 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "sk": "./bin/sk-tools"
+    "sk": "./bin/sk-cli"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fengzhike/sk-tools"
   },
-  "keywords": ["sk-tools","sk","node"],
+  "keywords": ["sk-cli","sk","node"],
   "bugs": {
     "url": "https://github.com/fengzhike/sk-tools/issues"
   },
-  "homepage": "https://github.com/fengzhike/sk-tool#readme",
+  "homepage": "https://github.com/fengzhike/sk-tools#readme",
   "author": "Shun-Kai",
   "license": "ISC",
   "devDependencies": {},
