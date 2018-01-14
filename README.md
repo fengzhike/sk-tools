@@ -16,5 +16,13 @@ sk --version
 
 ```
 sk -i
+sk --init
 sk init
+```
+
+## 帮助
+
+```
+sk -h
+sk --help
 ```
