@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var arg = process.argv[2];
+var shell = require("shelljs");
+if(arg=='init'||arg=='-i'){
+	shell.exec('git clone https://github.com/fengzhike/sk-demo.git');
+}else if(arg =='-v'|| arg =='--version' ){
+	shell.exec("echo hello " + arg);
+}
+else{
+	shell.exec("echo hello " + arg);
+}

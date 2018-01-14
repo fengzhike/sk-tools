@@ -1,0 +1,20 @@
+{
+  "name": "sk-tools",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sk": "./bin/sk-tools"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "shelljs": "^0.8.0",
+    "yargs": "^10.1.1"
+  }
+}
