@@ -1,28 +1,27 @@
 # sk-tools
+是一个基于BFF层的通用前后的脚手架，主要技术Koa + swig +gulp +webpack
+
 ## 安装
 
 ```
-npm i -g sk-tools
+$ npm i -g sk-tools
 ```
 
-## 查看
+## 初始化一个项目
 
 ```
-sk -v
-sk --version
+$ sk init [projectName]
 ```
 
-## 初始化
+## 添加应用页面
 
 ```
-sk -i
-sk --init
-sk init
+$ sk app [name]
 ```
 
-## 帮助
-
+## 其它
 ```
-sk -h
-sk --help
+$ sk -V/--version //版本号
+$ sk -h/--help //查看所有命令
+
 ```
