@@ -1,0 +1,16 @@
+{
+    "webdriver": {
+        "host": "47.94.138.248:3000",
+        "port": "4444",
+        "browsers": "chrome, ie 11",
+        "f2etest.userid": "User1509375496693",
+        "f2etest.apiKey": "a8b8b2e961cad9d0a1706ed7accd6107"
+    },
+    "vars": {},
+    "recorder": {
+        "pathAttrs": "data-id,data-name,type,data-type,role,data-role,data-value",
+        "attrValueBlack": "",
+        "classValueBlack": "",
+        "hideBeforeExpect": ""
+    }
+}

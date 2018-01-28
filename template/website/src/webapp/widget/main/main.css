@@ -1,0 +1,14 @@
+:root {
+  --mainColor: red;
+}
+
+.main__title {
+  color: var(--mainColor);
+}
+
+.main__img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: url('./images/3.png');
+}

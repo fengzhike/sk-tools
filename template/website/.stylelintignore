@@ -1,0 +1,3 @@
+# src/webapp/**/*.css
+build/**/*.css
+**/*.css

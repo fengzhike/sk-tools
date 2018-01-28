@@ -1,16 +1,96 @@
 #!/usr/bin/env node
-var arg = process.argv[2];
+
+const program = require('commander')
 const package = require('../package.json')
-var shell = require("shelljs");
-if(arg=='init'||arg=='-i'|| arg=='--init'){
-	shell.exec('git clone https://github.com/fengzhike/sk-demo.git');
-}else if(arg =='-v'|| arg =='--version' ){
-	shell.exec("echo sk-tools @" + package.version);
-}else if(arg =='-h'){
-	shell.exec("echo -v、--version:版本号 ");
-	shell.exec("echo -i、--init、init:初始化工程 ");
-	shell.exec("echo -h、--help:帮助 ");
-}
-else{
-	shell.exec("echo hello " + arg);
-}
+const app = require('../lib/app/index')
+// const website = require('../lib/website/index')
+// const compile = require('../lib/compile/index')
+const init = require('../lib/init/index')
+// const server = require('../lib/server/index')
+// const service = require('../lib/service/index')
+
+program
+	.version(package.version)
+
+// mk app [app name]
+program
+	.command('app')
+	.option("-i, --init", "init")
+	.action(function (...args) {
+		if (typeof args[0] === 'string')
+			app(...args)
+		else
+			app('app-demo', ...args)
+	})
+
+// mk website [website name]
+program
+	.command('init')
+	.option("-i, --init", "init")
+	.action(function (...args) {
+		if (typeof args[0] === 'string')
+			init(...args)
+		else
+			init('website-demo', ...args)
+	})
+
+// mk compile
+// program
+// 	.command('compile')
+// 	.option("-a, --apidoc", "apidoc")
+// 	.action(function (...args) {
+// 		if( typeof args[0] !== 'string' || (args[0] != 'website' &&  args[0] != 'server')){
+// 			console.log('请输入编译参数，website or server;例如mk compile website')
+// 		}else{
+// 			compile(args.shift(), ...args)
+// 		}
+// 	})
+
+// mk clone <app name> <targetPath>
+// program
+// 	.command('clone')
+// 	.action(function (...args) {
+// 		if( typeof args[0] !== 'string'){
+// 			console.log('请输入app name或者service name')
+// 		}
+// 		else if (typeof args[1] === 'string')
+// 			clone(...args)
+// 		else
+// 			clone(args[0], args[0], ...args)
+// 	})
+
+//mk server [server name]
+// program
+// 	.command('server')
+// 	.option("-i, --init", "init")
+// 	.action(function(...args){
+// 		if (typeof args[0] === 'string')
+// 			server(...args)
+// 		else
+// 			server('server-demo', ...args)
+// 	})
+
+// program
+// 	.command('service')
+// 	.option("-i, --init", "init")
+// 	.action(function (...args) {
+// 		if (typeof args[0] === 'string')
+// 			service(...args)
+// 		else
+// 			service('service-demo', ...args)
+// 	})
+
+program
+	.command('*')
+	.action(function (env) {
+		console.log('没有这个命令 "%s"', env)
+	})
+
+
+program.parse(process.argv)
+
+//捕获当前进程接收到的信号（如按下了 ctrl + c)
+process.on('SIGINT', function () {
+	program.runningCommand && program.runningCommand.kill('SIGKILL');
+	process.exit(0);
+})

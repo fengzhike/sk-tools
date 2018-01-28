@@ -1,6 +1,6 @@
 {
   "name": "sk-tools",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "description": "sk-tools",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/fengzhike/sk-tools"
   },
-  "keywords": ["sk-cli","sk","node"],
+  "keywords": [
+    "sk-cli",
+    "sk",
+    "node"
+  ],
   "bugs": {
     "url": "https://github.com/fengzhike/sk-tools/issues"
   },
@@ -22,7 +26,10 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "commander": "^2.13.0",
     "shelljs": "^0.8.0",
+    "vinyl-fs": "^3.0.2",
+    "watch": "^1.0.2",
     "yargs": "^10.1.1"
   }
 }

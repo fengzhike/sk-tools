@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+var arg = process.argv[2];
+const package = require('../package.json')
+var shell = require("shelljs");
+if(arg=='init'||arg=='-i'|| arg=='--init'){
+	shell.exec('git clone https://github.com/fengzhike/sk-demo.git');
+}else if(arg =='-v'|| arg =='--version' ){
+	shell.exec("echo sk-tools @" + package.version);
+}else if(arg =='-h'){
+	shell.exec("echo -v、--version:版本号 ");
+	shell.exec("echo -i、--init、init:初始化工程 ");
+	shell.exec("echo -h、--help:帮助 ");
+}
+else{
+	shell.exec("echo hello " + arg);
+}
