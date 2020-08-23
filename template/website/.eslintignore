@@ -1,5 +1,0 @@
-# src/webapp/**/*.js
-build/**/*.js
-config/**/*.js
-node_modules/**/*.js
-**/*.js

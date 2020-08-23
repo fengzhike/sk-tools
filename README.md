@@ -1,27 +1,33 @@
-# sk-tools
-是一个基于BFF层的通用前后的脚手架，主要技术Koa + swig +gulp +webpack
+# web-app-generator
 
-## 安装
+create simple web app, with vue or react;
 
-```
-$ npm i -g sk-tools
-```
+## Usage
 
-## 初始化一个项目
 
 ```
-$ sk init [projectName]
-```
+npx web-app-generator my-app
 
-## 添加应用页面
+cd my-app
 
-```
-$ sk app [name]
-```
+npm install
 
-## 其它
-```
-$ sk -V/--version //版本号
-$ sk -h/--help //查看所有命令
+npm run dev
 
 ```
+
+## cmd
+
+```
+npx web-app-generator <projectName> [projectType]
+```
+
+
+## Support
+
+| option | needed | type  | default  | value |
+| -------| -------| -------| -----------| --------- |
+| projectName   | True      | String |  ''  | eg: 'myapp'|
+| prejectType   | False     | String |  ''  | [vue]  react or react-hook |
+
+

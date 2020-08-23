@@ -1,35 +1,30 @@
 {
-  "name": "sk-tools",
-  "version": "0.4.2",
-  "description": "sk-tools",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "sk": "./bin/sk-tools"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fengzhike/sk-tools"
-  },
-  "keywords": [
-    "sk-cli",
-    "sk",
-    "node"
-  ],
-  "bugs": {
-    "url": "https://github.com/fengzhike/sk-tools/issues"
-  },
-  "homepage": "https://github.com/fengzhike/sk-tools#readme",
-  "author": "Shun-Kai",
-  "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
-    "commander": "^2.13.0",
-    "shelljs": "^0.8.0",
-    "vinyl-fs": "^3.0.2",
-    "watch": "^1.0.2",
-    "yargs": "^10.1.1"
-  }
+    "name": "sk-tools",
+    "version": "0.8.0",
+    "description": "web应用生成器",
+    "main": "./bin/index.js",
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "commander": "^5.0.0",
+        "cross-spawn": "^7.0.2",
+        "download-git-repo": "^3.0.2",
+        "fs-extra": "^9.0.0"
+    },
+    "bin": {
+        "create-web-tpl": "./bin/index.js"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "clear": "node scripts/clearTest.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fengzhike/sk-tools.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fengzhike/sk-tools/issues"
+    },
+    "homepage": "https://github.com/fengzhike/sk-tools#readme"
 }
