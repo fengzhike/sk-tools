@@ -1,6 +1,6 @@
 {
     "name": "sk-tools",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "web应用生成器",
     "main": "./bin/index.js",
     "dependencies": {
