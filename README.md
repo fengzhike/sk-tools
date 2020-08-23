@@ -1,4 +1,4 @@
-# web-app-generator
+# sk-tools
 
 create simple web app, with vue or react;
 
@@ -6,7 +6,7 @@ create simple web app, with vue or react;
 
 
 ```
-npx web-app-generator my-app
+npx sk-tools my-app
 
 cd my-app
 
@@ -19,7 +19,7 @@ npm run dev
 ## cmd
 
 ```
-npx web-app-generator <projectName> [projectType]
+npx sk-tools <projectName> [projectType]
 ```
 
 
